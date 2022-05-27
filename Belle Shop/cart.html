@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/cart.js"></script>
+    <title>Cart</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="display-3">
+        <a href="./index.html" class="text-white">Belle Shop</a>
+      </h1>
+    </header>
+    <section>
+      <div id="emptyCartDiv"><h2>Cart is Empty</h2></div>
+      <div id="cartDiv"></div>
+      <div id="totalDiv">
+        <p>
+          <span>Subtotal: </span>
+          <span id="subtotalPrice"></span>
+        </p>
+        <p>
+          <span>Tax:</span>
+          <span id="tax"></span>
+        </p>
+        <p>
+          <span>Discount: </span>
+          <span id="discount"></span>
+        </p>
+        <p>
+          <span>Total: </span>
+          <span id="totalPrice"></span>
+        </p>
+      </div>
+      <div id="checkoutDiv">
+        <button type="button" class="btn btn-success" id="checkoutButton">
+          Checkout
+        </button>
+      </div>
+    </section>
+  </body>
+</html>

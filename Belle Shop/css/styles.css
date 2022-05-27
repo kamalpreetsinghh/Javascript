@@ -1,0 +1,191 @@
+header {
+  background-color: black;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px 120px;
+}
+
+.grid-item {
+  padding: 40px 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#loaderDiv {
+  position: absolute;
+  top: 25%;
+  left: 37%;
+  z-index: 1;
+  text-align: center;
+  height: 400px;
+  width: 400px;
+  font-size: 64px;
+}
+
+.product-image {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+}
+
+.grid-item h2 {
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.grid-item button {
+  opacity: 0;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #eef1f1;
+  width: 60%;
+}
+
+.product-image {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.grid-item:hover .product-image {
+  opacity: 0.3;
+}
+
+.grid-item:hover button {
+  opacity: 1;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+.itemDetails {
+  margin-left: 50%;
+}
+
+#productImage {
+  object-fit: cover;
+  height: 500px;
+  width: 500px;
+  margin: 3% 5% 7% 10%;
+}
+
+#productDescDiv {
+  float: right;
+  width: 50%;
+  padding: 3% 10% 7% 5%;
+}
+
+#productDescription {
+  text-align: justify;
+}
+
+.margin-bottom {
+  margin-bottom: 5%;
+}
+
+#productPrice {
+  font-weight: bold;
+  font-size: larger;
+}
+
+#addToCartButton {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  height: 3.125rem;
+  font-size: large;
+  font-weight: 500;
+  border-radius: 0px;
+}
+
+h1 a {
+  text-decoration: none;
+}
+
+.minus-button,
+.plus-button {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+#productQuantity {
+  border-radius: 1.25rem;
+  width: 33%;
+  display: inline-block;
+}
+
+.cartImage {
+  object-fit: cover;
+  height: 150px;
+  width: 150px;
+  margin: 2% 3% 2% 20%;
+}
+
+.prodDetailsDiv {
+  width: 65%;
+  float: right;
+  padding: 2% 3%;
+}
+
+.prodDetailsDiv h2,
+h3 {
+  font-size: large;
+}
+
+.prodDetailsDiv p {
+  font-size: large;
+  font-weight: 500;
+}
+
+.margin-bottom-cart {
+  margin-bottom: 1.5%;
+}
+
+.deleteDiv,
+.innerProdDetailsDiv {
+  display: inline-block;
+  width: 50%;
+}
+
+.deleteDiv {
+  float: right;
+}
+
+.deleteImage {
+  width: 50px;
+  height: 75px;
+  object-fit: cover;
+}
+
+#checkoutDiv {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 62%;
+  float: right;
+}
+
+.width-30 {
+  border-radius: 1.25rem;
+  width: 33%;
+  display: inline-block;
+}
+
+#totalDiv {
+  margin-top: 2%;
+  padding: 0% 38%;
+}
+
+#openCart {
+  margin-top: 2%;
+  margin-left: 85%;
+}
+
+#emptyCartDiv {
+  padding: 10%;
+}
